@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+redis
+python-dotenv
+jinja2
+fastapi
+uvicorn[standard]
+pydantic
+redis
+python-dotenv
+jinja2

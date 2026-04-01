@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body onload="loadCart()">
+  <header>
+    <h1>Modern Store | Cart</h1>
+    <nav><a href="/">Products</a> | <a href="/checkout">Checkout</a></nav>
+  </header>
+  <main>
+    <div id="owner-wrap">
+      <label for="ownerId">Owner ID (Session):</label>
+      <input id="ownerId" value="guest_default" onchange="loadCart()">
+      <button class="secondary-btn" onclick="loadCart()">Refresh Cart</button>
+    </div>
+    <section>
+      <h2>Shopping Cart</h2>
+      <div id="cart-items"></div>
+    </section>
+    
+    <section id="pricing"></section>
+
+    <section id="ai-block"></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
